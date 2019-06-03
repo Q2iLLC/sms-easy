@@ -34,7 +34,7 @@ carriers:
     value: '@comcastpcs.textmsg.com'
   cricket:
     name: Cricket
-    value: '@sms.mycricket.com'
+    value: '@mms.cricketwireless.net'
   kajeet:
     name: kajeet
     value: '@mobile.kajeet.net'
