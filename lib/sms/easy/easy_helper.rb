@@ -11,8 +11,8 @@ module SMSEasyHelper
   # - phrase => default selected blank option in select box 
   # - selected => carrier to pre-select
   # - include_blank => Do you want the blank option tag (in ADDITION to the value-less 'phrase' option above)?
-  def carrier_select(name = :mobile_carrier, phrase = "Select a Carrier", selected = nil)
-    options = [phrase, nil] + carrier_collection 
+  def carrier_select(name = :mobile_carrier, selected = nil)
+    options = carrier_collection 
     select_tag name, options_for_select(options, selected), {include_blank: false}, {required: true, class: 'form-control'}
   end
 
